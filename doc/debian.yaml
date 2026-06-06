@@ -1,0 +1,20 @@
+base_dir: /srv/repo/debian
+
+distributions:
+  bookworm:
+    config: |
+      Codename: bookworm
+      Architectures: amd64
+      Components: main
+      SignWith: ABCD1234
+    packages:
+      - file: /srv/debs/debian/bookworm/mytool_1.0-1_amd64.deb
+
+  trixie:
+    config: |
+      Codename: trixie
+      Architectures: amd64
+      Components: main
+      SignWith: ABCD1234
+    packages:
+      - file: /srv/debs/debian/trixie/mytool_2.0-1_amd64.deb
