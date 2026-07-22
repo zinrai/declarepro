@@ -14,8 +14,6 @@ func main() {
 	}
 }
 
-const version = "0.1.0"
-
 func usage() {
 	fmt.Fprint(os.Stderr, `declarepro - declarative reprepro driver
 
@@ -37,7 +35,7 @@ func run() error {
 	flag.Parse()
 
 	if *showVersion {
-		fmt.Println("declarepro", version)
+		printVersion()
 		return nil
 	}
 
